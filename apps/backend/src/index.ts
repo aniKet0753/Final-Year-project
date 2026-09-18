@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 
-app.use("/signup",signUp)
+app.post("/signup",signUp)
 const PORT = process.env.PORT
 
 connectDB()
